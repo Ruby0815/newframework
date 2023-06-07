@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Framework Elements Group 6 Musicians</title>
+
+
+   <!-- GOOGLE FONTS -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&family=Open+Sans:wght@300;500;700;800&family=Roboto:wght@300;500;700;900&family=Ysabeau:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+
+   <!-- FONT AWESOME -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+   <!-- CSS custom styles -->
+   <link rel="stylesheet" href="../css/prism.css">
+   <link rel="stylesheet" href="../css/main.css">
+
+
+   <!-- Javascript link -->
+   <script src="../scripts/prism.js" defer></script>
+   <script src="../scripts/scripts.js" async></script>
+
+</head>
+
+<body>
+   <header class="lightGray">
+    <nav class="topNav">
+       <a href="../index.html" id="logoLink">
+          <img src="../images/paulinaDemoLogo.svg" alt="music symbol" id="logo">
+       </a>
+       <ul class="menu">
+          <li>
+             <a href="#about" class="active menuItem">Home</a>
+
+          </li>
+          <li>
+             <a href="#musicCollab" class=" menuItem">Music collaborations</a>
+
+          </li>
+          <!-- <li>
+             <a href="../pages/components.html" class="menuItem">Components</a>
+          </li>
+          <li>
+             <a href="../pages/demos.html" class="menuItem">Demos</a>
+          </li> -->
+       </ul>
+       <button class="icon">
+          <i class="fa-solid fa-bars menuIcon "></i>
+          <i class="fa-regular fa-rectangle-xmark closeIcon"></i>
+       </button>
+    </nav>
+ </header>
+<main class="container">
+    <article id="about">
+        
+        <div class="parallax bgImg01"></div>
+         <h1 class="italic "> Francisca Ferrada</h1>
+    
+        <div class="parallax"></div>
+        <h2>Guitar player</h2>
+        
+        <div class="parallax "></div>
+        <p>I was born and raised in Chile, but <span class="italic"> I have travelled the world and the seven seas... everybody is looking for something. </span> </p>
+        <div class="parallax "></div>
+        <p>The first concert I participated as a member of one of the most recognized Chilean rock bands is in this picture.</p> 
+        <div class="parallax "></div>
+        <p>Thousands of people attended this concert in Santiago de Chile in 2020.</p>
+        
+
+    </article>
+
+   <article id="musicCollab">
+    <h2>Music collaborations</h2>
+<p> Here is a list of the songs I have participated as a guitar player.</p>
+<table class="striped">
+    <tr>
+       <th>Song Title</th>
+       <th>Album</th>
+       <th>Artist</th>
+       <th>Year</th>
+       <th>Country</th>
+    </tr>
+    <tr>
+       <td> Gary1 </td>
+       <td>Gary</td>
+       <td>Gary</td>
+       <td>2023</td>
+       <td>U.S.</td>
+    </tr>
+    <tr>
+       <td> Je veux </td>
+       <td>Zaz</td>
+       <td>Zaz</td>
+       <td>2022</td>
+       <td>France</td>
+    </tr>
+    <tr>
+       <td> Somos Sur </td>
+       <td>Anita Tujoux</td>
+       <td>Anit Tijoux</td>
+       <td>2020</td>
+       <td>Chile</td>
+    </tr>
+    <tr>
+       <td> Millones </td>
+       <td>Al mismo tiempo</td>
+       <td>Camila Moreno</td>
+       <td>2019</td>
+       <td>Chile</td>
+    </tr>
+    
+ </table>
+    
+   </article>
+        
+   <article>
+
+    <h2>Indulge your ears</h2>
+    <p></p>
+    <div class="buttons-container">
+        <input type="text" class="todo-input" placeholder="Enter a new Song">
+        <!-- <input type="text" class="todo-input" placeholder="Enter a new to-do item"> -->
+        <div class="buttons">
+           <button onclick="addTodo()">Add Song name</button>
+           <button onclick="editTodo()">Edit Song name</button>
+           <button onclick="deleteTodo()">Delete song name</button>
+        </div>
+
+     </div>
+ 
+  <div class="todo-list">
+   
+  </div>
+  <div>
+     <button onclick="playSong()" class="playbtn">Load / Play Song</button>
+     <button id="pauseButton" class="pause">Pause</button><audio id="audioPlayer" controls autoplay>
+        <source src="" type="audio/mpeg">
+        <!-- add more source tags for different audio formats if needed -->
+     </audio>
+  </div>
+
+  <div id="controls">
+     <input id="volume" type="range" min="0" max="1" step="0.1" value="1">
+  </div>
+
+   </article>
+</main>
+<footer class="lightGray">
+<p>Francisca Ferrada</p>
+<p>Guitar player</p>
+<p>&copy; Copyright 2023</p>
+</footer>
+</body>
+
+</html>
